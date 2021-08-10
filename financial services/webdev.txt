@@ -1,0 +1,11 @@
+Web Developement :-
+Front End :
+html,css,js,jquery,ajax
+
+Back End :
+Python,SQL,PHP
+
+Framework :
+Bootstrap,Django
+
+

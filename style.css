@@ -1,0 +1,446 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+#navbar{
+    display: flex;
+    position: sticky;
+    top: 0px;
+   
+    
+}
+
+#navbar ul{
+    display: flex;
+    width: 600px;
+    margin: auto;
+    /* border: 2px solid black; */
+}
+/* Styling the company name */
+#name{
+    margin: 20px 10px;
+    padding: 8px 10px;
+    color: white;
+
+}
+
+/* Styling the links in navbar 
+ */
+ #navbar ul li{
+     list-style: none;
+     font-size: 25px;
+ }
+ #navbar ul li a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 0px 23px;
+    color: white;
+    
+    
+ }
+
+ #navbar ul li a:hover{
+    
+     border: 2px solid white;
+     background-color: white;
+     color: black;
+     border-radius: 15px;
+     padding: 0px 5px;
+ }
+
+ /* Backgroung for the navbar */
+ #navbar::before{
+    content: "";
+    background-color: rgb(146, 146, 146);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 90px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+ 
+/* Home section 
+ */
+
+ #home::before{
+     content: " ";
+     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(conf.jpg) no-repeat center/cover;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 650px;
+     z-index: -1;
+     opacity: 0.9; 
+ }
+
+ #home{
+     /* border: 2px solid white; */
+    width: 500px;
+    height: 500px;
+    margin: 25px 102px;
+    padding: 16px 10px;
+}
+#home h2{
+    margin: 8px 5px;
+    padding: 5px 5px;
+}
+ 
+#home h1{
+    color: white;
+    font-size: 30px;
+    margin: 14px 10px;
+    padding: 5px 0px;
+}
+#home p{
+    color: white;
+    margin: 12px 12px;
+    padding: 5px 0px;
+    line-height: 25px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#home button{
+    margin: 10px 10px;
+}
+
+/* Partition segment*/
+
+
+#partition{
+    /* display: flex; */
+
+    background: rgba(10, 226, 10, 0.856);
+    width: 100%;
+    height: 100px;
+    margin: 0px 0px;
+    margin-top: -15px;
+}
+#partition h3{
+    color: white;
+    margin: 5px 30px;
+    padding: 15px 5px;
+
+}
+#partition p{
+   
+    color: white;
+    margin: 5px 30px;
+    padding: 0px 5px;
+}
+
+#partition button{
+    float: right;
+    margin: -45px 20px;
+    clear: right;
+}
+
+
+/* SERVICES SECTION  */
+.container .head{
+    text-align: center;
+    margin: 40px;
+}
+.container .head h2{
+    margin: 12px;
+}
+
+.container .head h2 span{
+    color:rgb(11, 240, 11) ;
+}
+
+#services{
+    display: flex;
+    margin-left: 15px;
+    
+}
+
+#services .box{
+    /* border: 2px solid black; */
+    width: 30%;
+    height: 450px;
+    margin: 15px 15px;
+    background-color: rgb(230, 230, 230);
+}
+#services .box img{
+    width: 100%;
+    height: 250px;
+    
+    
+}
+#services .box h3{
+    margin: 15px 10px;
+}
+
+#services .box p{
+    margin: 5px 10px;
+
+}
+#services .box button{
+    margin: 20px 10px;
+    padding: 8px 5px;
+
+}
+
+ /* Reusable components*/
+
+
+.btn{
+    border: 2px solid white;
+    background-color: rgb(18, 148, 18);
+    border-radius: 14px;
+    font-size: 19px;
+    padding: 5px 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.btn:hover{
+    border: 2px solid black;
+    background-color:rgb(11, 240, 11);
+    color: black;
+}
+
+
+
+
+
+ .sub-h{
+     color: rgb(11, 240, 11);
+     font-size: 25px;
+ }
+
+ /* Solutions */
+
+ #solutions::before{
+    content: " ";
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(bg.jpg) no-repeat center/cover;
+    position: absolute;
+    
+    
+    width: 100%;
+    height: 450px;
+    z-index: -1;
+    opacity: 0.9;
+ }
+ #solutions{
+     display: flex;
+     justify-content: space-evenly;
+     
+ }
+ #solutions .container1{
+     /* border: 2px solid white; */
+     width: 45%;
+     /* height: 450px; */
+     
+ }
+
+ #solutions .container1 h3{
+     color: white;
+     margin: 20px 5px;
+     margin-top: 40px;
+ }
+ #solutions .container1 h2{
+     color: white;
+     margin: 15px 10px;
+ }
+ #solutions .container1 h2 span{
+     color:rgb(11, 240, 11) ;
+     display: block;
+ }
+
+ #solutions .container1 p{
+     color: white;
+     margin: 38px 9px;
+     font-size: 18px;
+ }
+ #solutions .container2{
+     display: grid;
+     grid-template-rows: repeat(4,100px);
+     grid-template-columns: repeat(2,100px);
+     grid-gap: 30px;
+
+ }
+ #solutions .container2{
+     /* border: 2px solid white; */
+     width: 48%;
+     justify-content: center;
+     
+ }
+
+ #solutions .container2 .boxes{
+     width: 100px;
+     height: 100px; 
+     /* border: 1px solid white; */
+     margin-top: 85px;
+
+     background-color: rgb(177, 176, 176);
+     
+ }
+
+ #solutions .container2 .boxes .box-h{
+    margin-top: 25px;
+    text-align: center;
+    color: rgb(13, 144, 13);
+ }
+
+ /* About section  */
+
+ #about .about{
+     width: 85%;
+     height: 500px;
+     /* border: 1px solid black; */
+     margin:auto;
+     display: flex;
+     background-color: rgb(243, 242, 242);
+     margin-bottom: 100px;
+
+     
+ }
+
+ #about .about img{
+     width:600px;
+     height: 500px;
+    
+ }
+ #about .about .info{
+     margin: 15px 25px;
+     
+ }
+
+ #about .about .info h3{
+     margin: 20px 0px;
+     
+ }
+ #about .about .info h2{
+     margin: 20px 0px;
+     color: rgb(11, 240, 11) ;
+     font-size: 30px;
+ }
+ #about .about .info p{
+     margin: 35px 0px;
+ }
+
+
+ /* TESTIMONIALS  */
+
+ #testimonials::before{
+     content: "";
+     background-color: rgb(243, 242, 242) ;
+     position: absolute;
+     z-index: -1;
+     width: 100%;
+     height: 500px;
+     margin: -50px 0px;
+    
+ }
+
+ #testimonials h2{
+     text-align: center;
+    margin: 0px 0px;
+   
+ }
+
+ #testimonials .test_box{
+     /* border: 1px solid black; */
+     width: 95%;
+     height: 500px;
+     margin: auto;
+     display: flex;
+ }
+
+ #testimonials .test_box .test1{
+     /* border: 1px solid black; */
+     width: 40%;
+     height: 250px;
+     margin: 95px 75px;
+     background-color: white;
+     text-align: center;
+ }
+ #testimonials .test_box .test2{
+    /* border: 1px solid black; */
+    width: 40%;
+    height: 250px;
+    margin: 95px 0px;
+    background-color: white;
+    text-align: center;
+ }
+
+ #testimonials .test_box p{
+     margin: 25px 10px;
+ }
+ #testimonials .test_box h2{
+     margin: 20px 0px;
+ }
+ #testimonials .test_box h3{
+     color: rgb(11, 240, 11);
+     margin: 15px 0px;
+ }
+
+
+ /* CONTACT US  */
+ #contact{
+     /* text-align: center; */
+     margin: 20px 0px;
+ }
+ 
+ #contact h2,h3{
+     color:  rgb(11, 240, 11);
+     text-align: center;
+ }
+#contact h3{
+    color: black;
+    margin-bottom: 30px;
+}
+ #contact .form_back{
+     background-color:  rgb(11, 240, 11);
+     width: 85%;
+     height: 400px;
+     margin: auto;
+    
+    
+ }
+
+ #contact .form{
+    /* border: 1px solid black; */
+    text-align: center;
+ }
+
+ 
+
+[type="text"]{
+    border: 1px solid rgb(11, 240, 11);
+    margin: 35px 20px;
+    padding: 8px 8px;
+    border-radius: 12px;
+   
+}
+[type="email"]{
+    border: 1px solid rgb(11, 240, 11);
+    margin: 35px 20px;
+    border-radius: 12px;
+    padding: 8px 8px;
+}
+[type="subject"]{
+    border: 1px solid rgb(11, 240, 11);
+    margin: 35px 20px;
+    border-radius: 12px;
+    padding: 8px 8px;
+}
+
+#contact .message{
+    text-align: center;
+    border: 1px solid rgb(11, 240, 11);
+    border-radius: 12px;
+    margin: 20px 0px;
+}
+#contact .form_back button{
+    margin: 15px 450px;
+}
